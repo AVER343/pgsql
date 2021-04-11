@@ -1,0 +1,15 @@
+---
+application:
+  name: "probuico"
+  project: "far-away-app"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "postgres"
+  version: "11"
+routers:
+- name: "main-probuico"
+  routes:
+  - application_name: "probuico"
+    paths:
+    - "/*"
